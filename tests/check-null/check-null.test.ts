@@ -4,8 +4,8 @@ import * as path from 'path';
 class User {}
 
 class Item {
-  locked: boolean;
-  constructor(props: { locked: boolean }) {
+  locked: boolean | null;
+  constructor(props: { locked: boolean | null }) {
     this.locked = props.locked;
   }
 }
